@@ -1,0 +1,19 @@
+[---------------------------------------]
+[ Autor:  Luis Loreto                   ]
+[ github: laloretom                     ]
+[---------------------------------------]
+
+ Instrucciones:
+  1. En la carpeta "config", se configura la BD
+     y sé en cuenta el archivo sql para la BD.
+  2. La web solo es la parte del cliente, no incluye
+     el administrador.
+ 
+ Información de la web:
+  1. La web puede registrar nuevos usuarios.
+  2. Se puede utilizar una cuenta registrada.
+  3. Se puede guardar productos en el carrito de compras.
+  4. Pude simular hacer un pedido.
+  5. Puede ver el historial de compras.
+  6. Se puede cancelar el pedido dependiendo del estado.
+  7. Se puede actualizar la información del cliente.
