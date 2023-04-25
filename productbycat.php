@@ -19,7 +19,7 @@ if (!isset($_GET['catId']) || $_GET['catId'] == NULL) {
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>Latest from Category</h3>
+    		<h3>Más reciente de la categoría</h3>
     		</div>
     		<div class="clear"></div>
     	</div>
@@ -37,7 +37,7 @@ if (!isset($_GET['catId']) || $_GET['catId'] == NULL) {
 					 <h2><?php echo $result['productName']; ?></h2>
 					 <p><?php echo $fm->textShorten($result['body'],60); ?></p>
 					 <p><span class="price">$ <?php echo $result['price']; ?></span></p>
-				     <div class="button"><span><a href="details.php?proid=<?php echo $result['productId']; ?>" class="details">Details</a></span></div>
+				     <div class="button"><span><a href="details.php?proid=<?php echo $result['productId']; ?>" class="details">Detalles</a></span></div>
 				</div>
 
 			
