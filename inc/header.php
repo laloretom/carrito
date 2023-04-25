@@ -73,6 +73,10 @@ $cmr = new Customer();
 			<div class="header_top_right">
 				<div class="search_box">
 					<!-- Buscador -->
+					<form action="search.php" method="get">
+				    	<input type="text" value="Buscar productos" name="search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Buscar productos';}">
+				    	<input type="submit" name="submit" value="BUSCAR">
+				    </form>
 				</div>
 				<div class="shopping_cart">
 					<div class="cart">
@@ -119,7 +123,7 @@ $cmr = new Customer();
 		<div class="menu" id="myHeader">
 			<ul id="dc_mega-menu-orange" style="text-transform: uppercase;" class="dc_mm-orange">
 				<div class="topnav" id="myTopnav">
-					<a href="index.php">Home</a>
+					<a href="index.php">Inicio</a>
 					<?php 
 					$chkCart = $ct->checkCartTable();
 					if ($chkCart) { ?>
