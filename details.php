@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['wlist'])) {
 				<?php } } ?>
 			</div>
 			<div class="rightsidebar span_3_of_1">
-				<h2>CATEGORIAS</h2>
+				<h2>CATEGORÍAS</h2>
 				<ul>
 					<?php 
 					$getCat = $cat->getAllCat();
