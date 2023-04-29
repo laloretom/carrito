@@ -49,7 +49,7 @@ $type        = mysqli_real_escape_string($this->db->link, $data['type']);
 
 if ($productName == "" || $catId == "" || $brandId == "" || $body == "" || $price == "" || $file_name == "" || $type == "") {
 	
-	$msg = "<span class='error'>Fields must not be empty !</span>";
+	$msg = "<span class='error'>¡Los campos no deben estar vacíos!</span>";
 	return $msg;
 }elseif ($file_size >1048567) {
      echo "<span class='error'>Image Size should be less then 1MB!
@@ -65,10 +65,10 @@ if ($productName == "" || $catId == "" || $brandId == "" || $body == "" || $pric
 
 	 $inserted_row = $this->db->insert($query);
 			if ($inserted_row) {
-				$msg = "<span class='success'>Product inserted Successfully.</span>";
+				$msg = "<span class='success'>Producto insertado con éxito.</span>";
 				return $msg;
 			} else{
-				$msg = "<span class='error'>Product Not inserted.</span>";
+				$msg = "<span class='error'>Producto No insertado.</span>";
 				return $msg;
 		}
 		}

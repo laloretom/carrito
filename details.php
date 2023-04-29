@@ -10,17 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
     $addCart = $ct->addToCart($quantity,$id);
 } ?>
 
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['compare'])) {
-	$productId = $_POST['productId'];
-    $insertCom = $pd->insertCompareData($productId,$cmrId);
-} ?>
-
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['wlist'])) {
-    $saveWlist = $pd->saveWishListData($id,$cmrId);
-} ?>
-
 <style>
 .mybutton {
     width: 100px;
@@ -49,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['wlist'])) {
                     </div>
                     <div class="add-cart">
                         <form action="" method="post">
-                            <input type="number" class="buyfield" name="quantity" value="1" />
+                            <input type="number" class="buyfield" name="quantity" min="1" value="1" />
                             <input type="submit" class="buysubmit" name="submit" value="Agregar al carrito" />
                         </form>
                     </div>

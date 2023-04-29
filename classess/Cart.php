@@ -37,7 +37,7 @@ public function addToCart($quantity, $id){
     $chquery = "SELECT * FROM tbl_cart WHERE productId = '$productId' AND sId='$sId'";
     $getPro = $this->db->select($chquery);
     if ($getPro) {
-    	$msg = "Product already added!";
+    	$msg = "¡Producto ya agregado!";
     	return $msg;
     }else{
 
@@ -78,7 +78,7 @@ public function getCartProduct(){
 	if ($updated_row) {
 		header("Location:cart.php");
 	} else{
-			$msg = "<span class='error'>Quantity Not Updated !</span>";
+			$msg = "<span class='error'>¡Cantidad no actualizada!</span>";
 				return $msg;
 	}
 	}
@@ -92,7 +92,7 @@ public function getCartProduct(){
 	if ($deldata) {
 		echo "<script>window.location = 'cart.php';</script>";
 	}else{
-$msg = "<span class='error'>Product Not Deleted !</span>";
+		$msg = "<span class='error'>¡Producto no eliminado!</span>";
 				return $msg;
 
 	}
@@ -160,10 +160,10 @@ $msg = "<span class='error'>Product Not Deleted !</span>";
 
 	$updated_row = $this->db->update($query);
 	if ($updated_row) {
-		$msg = "<span class='success'>Updated Successfully.</span>";
+		$msg = "<span class='success'>Actualizado con éxito.</span>";
 				return $msg;
 	} else{
-			$msg = "<span class='error'>Not Updated !</span>";
+			$msg = "<span class='error'>¡No actualizada!</span>";
 				return $msg;
 	}
 
@@ -175,10 +175,10 @@ $msg = "<span class='error'>Product Not Deleted !</span>";
 		$query = "DELETE FROM tbl_order WHERE id = '$id' ";
 	    $deldata = $this->db->delete($query);
 	    if ($deldata) {
-		$msg = "<span class='success'>Data Deleted Successfully.</span>";
+		$msg = "<span class='success'>Datos eliminados con éxito.</span>";
 				return $msg;
 	}else{
-$msg = "<span class='error'>Data Not Deleted !</span>";
+		$msg = "<span class='error'>¡Datos no eliminados!</span>";
 				return $msg;
 
 	}
@@ -193,10 +193,10 @@ $msg = "<span class='error'>Data Not Deleted !</span>";
 
 	$updated_row = $this->db->update($query);
 	if ($updated_row) {
-		$msg = "<span class='success'>Updated Successfully.</span>";
+		$msg = "<span class='success'>Actualizado con éxito.</span>";
 				return $msg;
 	} else{
-			$msg = "<span class='error'>Not Updated !</span>";
+			$msg = "<span class='error'>No actualizada!</span>";
 				return $msg;
 	}
 	}

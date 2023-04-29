@@ -934,7 +934,8 @@ p.note{
 	padding:1.5%;
 }
 .images_3_of_2 img {
-  height: 302px;
+  height: 400px;
+  max-height: 100%;
   max-width: 100%;
   width: 100%;
 }
